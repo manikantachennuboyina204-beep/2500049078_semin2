@@ -1,0 +1,187 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 35px 15px;
+  background: #18263d;
+}
+
+.header h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #bdc9dc;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.form-section,
+.movies-section {
+  background: #1c2b43;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #53647d;
+  border-radius: 7px;
+  background: #101827;
+  color: white;
+  font-size: 15px;
+}
+
+input::placeholder {
+  color: #aab6c8;
+}
+
+.form-buttons {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 7px;
+  padding: 11px 16px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.add-btn {
+  background: #16834a;
+}
+
+.clear-btn {
+  background: #53647d;
+}
+
+.movies-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.movies-heading span {
+  color: #65d69a;
+}
+
+.search-input {
+  margin-bottom: 22px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  background: #263953;
+  border: 1px solid #40536d;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.movie-icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.movie-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #7fc7ff;
+}
+
+.movie-card p {
+  margin: 9px 0;
+  color: #dce5f2;
+  overflow-wrap: anywhere;
+}
+
+.card-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.trailer-btn {
+  background: #bd2525;
+}
+
+.edit-btn {
+  background: #2469bd;
+}
+
+.delete-btn {
+  background: #a52b35;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 30px;
+  color: #bdc9dc;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aab6c8;
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 23px;
+  }
+
+  .form-buttons {
+    grid-column: auto;
+  }
+}
